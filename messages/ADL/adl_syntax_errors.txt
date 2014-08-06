@@ -25,7 +25,7 @@ templates = <
 		["SDSF"] = <"Syntax error: differential syntax not allowed in top-level archetype">
 		["SDINV"] = <"Syntax error: invalid ODIN section; error: $1">
 		["SCCOG"] = <"Syntax error: expecting a new node definition, primitive node definition, 'use' path, or 'archetype' reference">
-		["SUAID"] = <"Syntax error: expecting [archetype_id] in use_archetype statement">
+		["SUAID"] = <"Syntax error: expecting [idN, archetype_id] in use_archetype statement">
 		["SUAIDI"] = <"Syntax error: invalid archetype id $1">
 		["SOCCF"] = <"Syntax error: expecting an 'occurrences expression', e.g. 'occurrences matches {n..m}'">
 		["SUNPA"] = <"Syntax error: expecting absolute path in use_node statement">
@@ -53,10 +53,17 @@ templates = <
 		["SCTPT"] = <"Syntax error: invalid time constraint pattern '$1'; allowed patterns: $2">
 		["SCDTPT"] = <"Syntax error: invalid date/time constraint pattern '$1'; allowed patterns: $2">
 		["SCDUPT"] = <"Syntax error: invalid duration constraint pattern '$1'; legal pattern: P[Y|y][M|m][W|w][D|d][T[H|h][M|m][S|s]] or P[W|w] [/duration_interval]">
+
 		["SCSRE"] = <"Syntax error: regular expression compile error '$1' is not a valid regular expression">
+
+		["STCVA"] = <"Syntax error: invalid term code reference: '$1'; code string must conform to regex at(0|[1-9][0-9]*)(\\.(0|[1-9][0-9]*))*">
+		["STCID"] = <"Syntax error: invalid id code reference: '$1'; code string must conform to regex id(0|[1-9][0-9]*)(\\.(0|[1-9][0-9]*))*">
+		["STCVS"] = <"Syntax error: invalid value set reference: '$1'; code string must conform to regex ac(0|[1-9][0-9]*)(\\.(0|[1-9][0-9]*))*">
+
 		["STCCP"] = <"Syntax error: invalid term code constraint pattern '$1': $2">
-		["STCDC"] = <"Syntax error: duplicate code(s) found in code list">
-		["STCAC"] = <"Syntax error: assumed value code $1 not found in code list">
+		["STCDC"] = <"Syntax error: duplicate code $1 found in code list of terminology constraint at path $2">
+		["STVSI"] = <"Syntax error: invalid value set with terminology $1 at path $2: no codes supplied">
+		["STCAC"] = <"Syntax error: assumed value code $1 not found in code list of terminology constraint at path $2">
 		["STCNT"] = <"Syntax error: terminology not specified">
 	>
 >
